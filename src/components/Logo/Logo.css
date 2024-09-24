@@ -1,0 +1,45 @@
+.logo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.logo__img {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+@media (max-width: 1919px) and (min-width: 1440px) {
+  .logo__img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1439px) {
+  .logo {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid black;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-radius: 0;
+    border: none;
+  }
+}

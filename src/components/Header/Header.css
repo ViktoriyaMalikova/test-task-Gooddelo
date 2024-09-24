@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 33px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 0.7;
+  letter-spacing: 37px;
+}
+
+@media (max-width: 1919px) {
+  .header__title {
+    letter-spacing: 17px;
+  }
+}
+
+@media (max-width: 424px) {
+  .header__title {
+    font-size: 27px;
+  }
+}
