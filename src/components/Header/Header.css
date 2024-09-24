@@ -9,12 +9,12 @@
   font-size: 37px;
   font-weight: 700;
   line-height: 0.7;
-  letter-spacing: 37px;
+  letter-spacing: 1em;
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 1439px) {
   .header__title {
-    letter-spacing: 17px;
+    letter-spacing: 0.5em;
   }
 }
 

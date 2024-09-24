@@ -3,7 +3,7 @@
   height: 100%;
   position: relative;
   background-color: #fff;
-  border: 1px solid black;
+  border: 1px solid #000;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -29,8 +29,6 @@
     grid-row-start: 3;
     grid-row-end: 4;
     border-radius: 20px;
-    border: none;
-    border: 1px solid black;
   }
 }
 
