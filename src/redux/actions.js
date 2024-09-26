@@ -14,18 +14,22 @@ export function isExceeding() {
 
 export function dataLoad() {
   return async (dispatch) => {
-    const response = await fetch("http://dushnila.gooddelo.com/data");
-    const jsonData = await response.json();
+    try {
+      const response = await fetch("http://dushnila.gooddelo.com/data");
+      const jsonData = await response.json();
 
-    if (jsonData.temp >= MAXIMUM_TEMP || jsonData.co2 >= MAXIMUM_PPM) {
-      dispatch(isExceeding());
-    } else {
-      dispatch(isNormal());
+      if (jsonData.temp >= MAXIMUM_TEMP || jsonData.co2 >= MAXIMUM_PPM) {
+        dispatch(isExceeding());
+      } else {
+        dispatch(isNormal());
+      }
+
+      dispatch({
+        type: DATA__LOAD,
+        data: jsonData,
+      });
+    } catch (err) {
+      console.log("Ошибка:", err);
     }
-
-    dispatch({
-      type: DATA__LOAD,
-      data: jsonData,
-    });
   };
 }

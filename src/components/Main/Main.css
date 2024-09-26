@@ -2,7 +2,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 18.3% 18.3% 1fr;
-  grid-gap: 40px;
+  gap: 40px;
   padding: 0 20px;
   width: 100%;
   height: calc(100vh - 99px);
@@ -17,7 +17,6 @@
 @media (max-width: 1439px) {
   .content {
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
     padding-bottom: 20px;
     height: 100%;
   }
@@ -25,7 +24,6 @@
 
 @media (max-width: 767px) {
   .content {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0;
